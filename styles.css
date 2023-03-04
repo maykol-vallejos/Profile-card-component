@@ -1,0 +1,132 @@
+:root{
+--Dark-cyan: hsl(185, 75%, 39%);
+--Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+--Dark-grayish-blue: hsl(227, 10%, 46%);
+
+--Dark-gray: hsl(0, 0%, 59%);
+
+--White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    
+}
+
+body{
+   
+    font-family: 'Kumbh Sans', sans-serif;
+
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+
+    background-color: var(--Dark-cyan);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: right 52vw bottom 38vh, left 50vw top 50vh;
+   
+}
+
+
+
+.card{
+    width: 35.5rem;
+    background-color: var(--White);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    
+    font-size: 1.8rem;
+}
+
+.card img{
+    width: 100%;
+    
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+   
+}
+
+.profile img{
+    width: 11rem;
+    border-radius: 50%;
+    border: 0.4rem solid  var(--White);
+    margin-top: -5.2rem;
+}
+
+.name-age{
+    display: flex;
+    align-items: center;
+    /* background-color: bisque; */
+    margin-top: 1.5rem;
+}
+
+.name-age h1{
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--Very-dark-desaturated-blue);
+
+}
+
+.name-age h2{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
+    margin-left: 1.5rem;
+}
+
+.profile p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--Dark-gray);
+    margin-bottom: 3rem;
+}
+
+hr{
+    color: var(--Dark-gray);
+}
+
+.statistics{
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 4rem;
+    /* background-color: bisque; */
+}
+
+.statistics div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.statistics div h3{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--Very-dark-desaturated-blue);
+    margin-bottom: 0.5rem;
+}
+
+.statistics div p{
+    font-size: 1rem;
+    color: var(--Dark-gray);
+    letter-spacing: 0.2rem;
+}
+
+
+@media only screen and (max-width:37.5rem) {
+    .card{
+        width: 33rem;
+    }
+}
